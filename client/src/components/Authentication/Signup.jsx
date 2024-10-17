@@ -103,7 +103,7 @@ import {
           },
         };
         const { data } = await axios.post(
-          "http://127.0.0.1:3000/api/user",
+          "https://rewtsp-7.onrender.com/api/user",
           {
             name,
             email,
