@@ -59,7 +59,7 @@ import {
             Authorization: `Bearer ${user.token}`,
           },
         };
-        const { data } = await axios.get(`http://127.0.0.1:3000/api/user?search=${search}`, config);
+        const { data } = await axios.get(`https://rewtsp-7.onrender.com/api/user?search=${search}`, config);
         console.log(data);
         setLoading(false);
         setSearchResult(data);
@@ -98,7 +98,7 @@ import {
           },
         };
         const { data } = await axios.post(
-          `http://127.0.0.1:3000/api/chat/group`,
+          `https://rewtsp-7.onrender.com/api/chat/group`,
           {
             name: groupChatName,
             users: JSON.stringify(selectedUsers.map((u) => u._id)),
